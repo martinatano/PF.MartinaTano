@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+header {
+    background-color: black;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    color: wheat;
+}
+header nav{
+    background-color: black;
+    color: white;
+}
+
+.hero {
+    background-image: url("../img/quesos-duros-vaquero-small.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h2 {
+    padding: 20px;
+}
+
+.hero a {
+    padding: 20px;
+    font-size: 30px;
+}
+
+main section p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main section a {
+    color: white;
+}
+
+main {
+    background-color: black;
+}
+
+main section h2 {
+    font-size: 50px;
+}
+
+main section p {
+    font-size: 20px;
+}
+
+main section {
+    background-color: black;
+}
+
+.mayoristas {
+    color: white;
+    background-color: black;
+
+}
+
+
+.datos {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.envios {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item img {
+    height: 350px;
+    width: 300px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.grid-item h3 {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.grid-item {
+    border: 2px solid white;
+    box-shadow: 15px 13px 12px -3px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 15px 13px 12px -3px rgba(255,255,255,0.5);
+    -moz-box-shadow: 15px 13px 12px -3px rgba(255,255,255,0.5);}
+
+.mayoristas {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.id {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.envios h3 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.datos {
+    padding: 20px;
+}
+
+footer div img {
+    width: 60px;
+    padding: 10px;
+}
+.grid-contenedor {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-items{
+    color:white;
+    align-items: center;
+    
+}
