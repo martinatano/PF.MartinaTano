@@ -46,12 +46,23 @@
     </header>
     <main>
         <section class="envios">
-            <h3>ENVIOS</h3>
             <p> Realizamos envios a todo el pais, por correo argentino a domicilio o a la sucursal de tu cercania. </p>
-            <div>
-                 <h3> De donde sos? </h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Codigo postal</label>
+                  <input type="postalcode" class="form-control" id="postalcode">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Quiero cotizar mi envio!</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
         </section>
     </main>
     <footer>
