@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-}
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -104,19 +100,33 @@ main section {
     background-position: center;
     color: white;
     justify-items: center;
-    padding: 100px;
+    ;
+    display: flex;
+    flex-direction: column;
 }
 
-.mayoristas h2 {
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
 
 .mayoristas div {
     text-align: center;
 }
 
+.mayoristas div img {
+    width: 90px;
+    height: 90px;
+}
+
+.input {
+    font-size: 10px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px;
+    justify-content: center;
+}
+
+.input h4 {
+    font-size: 20px;
+    padding: 5px;
+}
 
 .datos {
     color: white;
@@ -136,16 +146,16 @@ main section {
     background-position: center;
     color: white;
     justify-items: center;
-    padding: 100px;
 }
 
-.envios p{
-    font-family:Arial, Helvetica, sans-serif;
+.envios p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
-.mb-3{
-    width: 50%;
-    margin-left: 300px;
+
+.mb-3 {
+    justify-content: center;
+    padding: 50px;
 }
 
 .grid-container {
@@ -182,7 +192,7 @@ main section {
     padding: 20px;
 }
 
-.envios h3 {
+.envios p {
     font-size: 30px;
     padding: 20px;
 }
@@ -199,7 +209,6 @@ main section {
 
 .grid-items {
     color: white;
-    align-content: start;
 }
 
 .grid-items img {
@@ -224,17 +233,83 @@ footer div img {
     width: 60px;
     padding: 10px;
 }
- @media screen and (max-width:414px){
-.hero h2{
-    font-size: 30px;
+
+.foto-1 img{
+    transition: 1s;
 }
-.hero p{
-    font-size: 15px;
+
+.foto-1 img:hover {
+    transform: scale(1.2);
+
 }
-.hero a{
-    font-size: 15px;
+
+
+@media screen and (max-width:414px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero a {
+        font-size: 15px;
+    }
+
+    .mayoristas h2 {
+        font-size: 20px;
+    }
 }
-.mayoristas h2{
-    font-size: 20px;
+
+@media screen and (max-width:414px) {
+    .grid-contenedor {
+        display: block;
+    }
+
+    .grid-container {
+        Grid-template-columns: repeat (2, 1fr);
+        Grid-template-rows: 220px;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+    }
+
+    .envios {
+        font-size: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .envios p {
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mb-3 {
+        justify-content: center;
+    }
+
+    .mayoristas div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mayoristas div h3 {
+        font-size: 20px;
+    }
+
+    .mayoristas div p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .input {
+        font-size: 10px;
+    }
+
+    .input h4 {
+        font-size: 10px;
+    }
 }
- }
