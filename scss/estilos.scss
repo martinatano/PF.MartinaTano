@@ -1,6 +1,6 @@
-@import url(./base/_generales.scss);
-@import url(./base/_variables.scss);
-@import url(./components/_header.scss);
-@import url(./components/_main.scss);
-@import url(./components/_footer.scss);
-@import url(./base/_mediaqueris.scss);
+@import "./base/generales";
+@import "./base/variables";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./base/mediaqueris";

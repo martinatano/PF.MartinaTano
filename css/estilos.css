@@ -1,6 +1,186 @@
-@import url(./base/_generales.scss);
-@import url(./base/_variables.scss);
-@import url(./components/_header.scss);
-@import url(./components/_main.scss);
-@import url(./components/_footer.scss);
-@import url(./base/_mediaqueris.scss);
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: black;
+  color: wheat; }
+  header img {
+    width: 200px; }
+  header nav {
+    background-color: black;
+    color: white; }
+    header nav ul {
+      list-style: none;
+      text-align: center; }
+      header nav ul li {
+        display: inline-block;
+        margin: 10px 5px 10px 5px;
+        align-items: center; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white;
+          margin-left: 100px; }
+
+main .hero {
+  background-image: url("../img/quesos-duros-vaquero-small.jpg");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: black; }
+  main .hero h2 {
+    padding: 20px;
+    font-size: 50px; }
+  main .hero p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px; }
+  main .hero a {
+    padding: 20px;
+    font-size: 30px;
+    color: white; }
+
+main .grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start; }
+  main .grid-contenedor .grid-items {
+    color: white; }
+    main .grid-contenedor .grid-items h2 {
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px; }
+    main .grid-contenedor .grid-items p {
+      font-size: 15px; }
+    main .grid-contenedor .grid-items img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      padding: 20px;
+      align-content: center; }
+
+main .envios p {
+  font-size: 30px;
+  padding: 20px; }
+
+main .envios form .mb-3 {
+  justify-content: center;
+  padding: 50px; }
+
+main .mayoristas {
+  background-image: url(../img/quesoss.jpg);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  main .mayoristas .foto-1 img {
+    width: 90px;
+    height: 90px;
+    transition: 1s; }
+  main .mayoristas .foto2 img {
+    width: 90px;
+    height: 90px; }
+  main .mayoristas .foto-3 img {
+    width: 90px;
+    height: 90px; }
+  main .mayoristas .input {
+    font-size: 10px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px;
+    justify-content: center; }
+    main .mayoristas .input h4 {
+      font-size: 20px;
+      padding: 5px; }
+
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px; }
+  main .grid-container .grid-item {
+    border: 2px solid white;
+    box-shadow: 15px 13px 12px -3px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 15px 13px 12px -3px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 15px 13px 12px -3px rgba(255, 255, 255, 0.5); }
+    main .grid-container .grid-item img {
+      height: 350px;
+      width: 300px;
+      margin-left: 80px;
+      margin-top: 30px; }
+    main .grid-container .grid-item h3 {
+      color: white;
+      position: relative;
+      text-align: center; }
+
+footer div a img {
+  width: 60px;
+  padding: 10px; }
+
+@media screen and (max-width: 414px) {
+  .hero h2 {
+    font-size: 30px; }
+  .hero p {
+    font-size: 15px; }
+  .hero a {
+    font-size: 15px; }
+  .mayoristas .foto-1 img {
+    width: 50px;
+    height: 50px; }
+  .mayoristas .foto-1 h3 {
+    font-size: 20px; }
+  .mayoristas .foto-1 p {
+    font-size: 10px;
+    text-align: center; }
+  .mayoristas .foto2 img {
+    width: 50px;
+    height: 50px; }
+  .mayoristas .foto2 h3 {
+    font-size: 20px; }
+  .mayoristas .foto2 p {
+    font-size: 10px;
+    text-align: center; }
+  .mayoristas .foto-3 img {
+    width: 50px;
+    height: 50px; }
+  .mayoristas .foto-3 h3 {
+    font-size: 20px; }
+  .mayoristas .foto-3 p {
+    font-size: 10px;
+    text-align: center; }
+  .mayoristas .input {
+    font-size: 10px; }
+    .mayoristas .input h4 {
+      font-size: 10px; }
+  .grid-contenedor {
+    display: block; }
+  .grid-container {
+    Grid-template-columns: repeat 2, 1fr;
+    Grid-template-rows: 220px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px; }
+  .envios {
+    font-size: 5px;
+    justify-content: center;
+    align-items: center; }
+    .envios p {
+      font-size: 15px;
+      justify-content: center;
+      text-align: center; }
+    .envios form .mb-3 {
+      justify-content: center; } }
