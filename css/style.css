@@ -242,7 +242,9 @@ footer div img {
     transform: scale(1.2);
 
 }
-
+.accordion-flush{
+    background-color: black;
+}
 
 @media screen and (max-width:414px) {
     .hero h2 {

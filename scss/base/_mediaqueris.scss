@@ -1,102 +1,127 @@
 @media screen and (max-width:414px) {
-    .hero {
-        h2 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 15px;
-        }
-
-        a {
-            font-size: 15px;
-        }
-    }
-
-    .mayoristas {
-        .foto-1 {
-            img {
-                width: 50px;
-                height: 50px;
-            }
-
-            h3 {
-                font-size: 20px;
+    main {
+        .hero {
+            h2 {
+                font-size: 30px;
             }
 
             p {
-                font-size: 10px;
+                font-size: 15px;
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+
+
+        .mayoristas {
+            .foto-1 {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+
+            .foto2 {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+
+            .foto-3 {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+            .nosotros{
+                p{
+                    font-size: 15px;
+                    padding:0;
+                    margin-left: 3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        .grid-contenedor {
+            display: block;
+            .grid-items{
+                padding:3px;
                 text-align: center;
             }
         }
 
-        .foto2 {
-            img {
-                width: 50px;
-                height: 50px;
-            }
+        .grid-container {
+            grid-template-columns: 300px;
+            grid-template-rows: 250px;
+            column-gap: 10px;
+            row-gap: 50px;
+            padding: 20px;
 
-            h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 10px;
-                text-align: center;
-            }
-        }
-
-        .foto-3 {
-            img {
-                width: 50px;
-                height: 50px;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 10px;
-                text-align: center;
-            }
-        }
-
-        .input {
-            font-size: 10px;
-
-            h4 {
-                font-size: 10px;
-            }
-        }
-    }
-
-    .grid-contenedor {
-        display: block;
-    }
-
-    .grid-container {
-        Grid-template-columns: repeat (2, 1fr);
-        Grid-template-rows: 220px;
-        column-gap: 20px;
-        row-gap: 20px;
-        padding: 20px;
-    }
-
-    .envios {
-        font-size: 5px;
-        justify-content: center;
-        align-items: center;
-
-        p {
-            font-size: 15px;
-            justify-content: center;
-            text-align: center;
-        }
-
-        form {
-            .mb-3 {
+            .grid-item {
+                border: 2px solid white;
                 justify-content: center;
+
+                img {
+                    width: 150px;
+                    height: 180px;
+                    align-items: center;
+                }
+
+                h3 {
+                    position: relative;
+                    text-align: center;
+                    font-size: 10px;
+
+                }
+            }
+        }
+
+        .envios {
+            font-size: 8px;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 15px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            form {
+                .mb-3 {
+                    justify-content: center;
+                }
             }
         }
     }

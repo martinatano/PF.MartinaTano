@@ -52,7 +52,8 @@ main .grid-contenedor {
   grid-template-columns: repeat(2, 1fr);
   align-items: start; }
   main .grid-contenedor .grid-items {
-    color: white; }
+    color: white;
+    background-color: black; }
     main .grid-contenedor .grid-items h2 {
       text-align: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,13 +67,24 @@ main .grid-contenedor {
       padding: 20px;
       align-content: center; }
 
-main .envios p {
-  font-size: 30px;
-  padding: 20px; }
+main .envios {
+  color: white;
+  background-color: black;
+  text-align: center;
+  background-image: url(../img/1-slide-1678189968784-2371531713-9bec6f1025b7bbe91c656d17ebe637241678189971-480-0.webp);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-items: center; }
+  main .envios div iframe {
+    padding: 50px; }
 
-main .envios form .mb-3 {
-  justify-content: center;
-  padding: 50px; }
+main .accordion-body {
+  color: white;
+  background-color: black; }
 
 main .mayoristas {
   background-image: url(../img/quesoss.jpg);
@@ -85,33 +97,31 @@ main .mayoristas {
   justify-items: center;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  background-color: black; }
   main .mayoristas .foto-1 img {
     width: 90px;
-    height: 90px;
-    transition: 1s; }
+    height: 90px; }
   main .mayoristas .foto2 img {
     width: 90px;
     height: 90px; }
-  main .mayoristas .foto-3 img {
+  main .mayoristas .foto3 img {
     width: 90px;
     height: 90px; }
-  main .mayoristas .input {
-    font-size: 10px;
-    background-color: black;
-    border: 2px solid white;
-    padding: 15px;
-    justify-content: center; }
-    main .mayoristas .input h4 {
-      font-size: 20px;
-      padding: 5px; }
+  main .mayoristas .nosotros p {
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; }
 
 main .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   column-gap: 20px;
   row-gap: 20px;
-  padding: 20px; }
+  padding: 20px;
+  background-color: black; }
   main .grid-container .grid-item {
     border: 2px solid white;
     box-shadow: 15px 13px 12px -3px rgba(255, 255, 255, 0.5);
@@ -132,55 +142,103 @@ footer div a img {
   padding: 10px; }
 
 @media screen and (max-width: 414px) {
-  .hero h2 {
+  main .hero h2 {
     font-size: 30px; }
-  .hero p {
+  main .hero p {
     font-size: 15px; }
-  .hero a {
+  main .hero a {
     font-size: 15px; }
-  .mayoristas .foto-1 img {
+  main .mayoristas .foto-1 img {
     width: 50px;
     height: 50px; }
-  .mayoristas .foto-1 h3 {
+  main .mayoristas .foto-1 h3 {
     font-size: 20px; }
-  .mayoristas .foto-1 p {
+  main .mayoristas .foto-1 p {
     font-size: 10px;
     text-align: center; }
-  .mayoristas .foto2 img {
+  main .mayoristas .foto2 img {
     width: 50px;
     height: 50px; }
-  .mayoristas .foto2 h3 {
+  main .mayoristas .foto2 h3 {
     font-size: 20px; }
-  .mayoristas .foto2 p {
+  main .mayoristas .foto2 p {
     font-size: 10px;
     text-align: center; }
-  .mayoristas .foto-3 img {
+  main .mayoristas .foto-3 img {
     width: 50px;
     height: 50px; }
-  .mayoristas .foto-3 h3 {
+  main .mayoristas .foto-3 h3 {
     font-size: 20px; }
-  .mayoristas .foto-3 p {
+  main .mayoristas .foto-3 p {
     font-size: 10px;
     text-align: center; }
-  .mayoristas .input {
-    font-size: 10px; }
-    .mayoristas .input h4 {
-      font-size: 10px; }
-  .grid-contenedor {
+  main .mayoristas .nosotros p {
+    font-size: 15px;
+    padding: 0;
+    margin-left: 3px;
+    margin-right: 3px; }
+  main .grid-contenedor {
     display: block; }
-  .grid-container {
-    Grid-template-columns: repeat 2, 1fr;
-    Grid-template-rows: 220px;
-    column-gap: 20px;
-    row-gap: 20px;
+    main .grid-contenedor .grid-items {
+      padding: 3px;
+      text-align: center; }
+  main .grid-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 250px;
+    column-gap: 10px;
+    row-gap: 50px;
     padding: 20px; }
-  .envios {
-    font-size: 5px;
+    main .grid-container .grid-item {
+      border: 2px solid white;
+      justify-content: center; }
+      main .grid-container .grid-item img {
+        width: 150px;
+        height: 180px;
+        align-items: center; }
+      main .grid-container .grid-item h3 {
+        position: relative;
+        text-align: center;
+        font-size: 10px; }
+  main .envios {
+    font-size: 8px;
     justify-content: center;
     align-items: center; }
-    .envios p {
+    main .envios p {
       font-size: 15px;
       justify-content: center;
       text-align: center; }
-    .envios form .mb-3 {
+    main .envios form .mb-3 {
       justify-content: center; } }
+
+.foto-1 img {
+  transition: 1s; }
+
+.foto-1 img:hover {
+  transform: scale(1.2); }
+
+.foto2 img {
+  transition: 1s; }
+
+.foto2 img:hover {
+  transform: scale(1.2); }
+
+.foto3 img {
+  transition: 1s; }
+
+.foto3 img:hover {
+  transform: scale(1.2); }
+
+.grid-contenedor .grid-items img:hover {
+  animation-name: imagen;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-iteration-count: initial; }
+
+@keyframes imagen {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
