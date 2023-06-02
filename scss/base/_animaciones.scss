@@ -43,16 +43,12 @@
 .grid-contenedor {
     .grid-items {
         img {
-            &:hover {
                 animation-name: imagen;
-                animation-duration:4s;
-                animation-timing-function: ease-in-out;
-                animation-direction: initial;
+                animation-duration:2s;
                 animation-iteration-count: initial;
             }
         }
     }
-}
 
 @keyframes imagen {
     from {

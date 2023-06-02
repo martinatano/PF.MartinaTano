@@ -141,6 +141,34 @@ footer div a img {
   width: 60px;
   padding: 10px; }
 
+@media screen and (max-width: 768px) {
+  .grid-contenedor {
+    display: block; }
+    .grid-contenedor .grid-items {
+      padding: 3px;
+      text-align: center; }
+  .grid-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 250px;
+    column-gap: 10px;
+    row-gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center; }
+    .grid-container .grid-item {
+      border: 2px solid white;
+      justify-content: center;
+      align-items: center; }
+      .grid-container .grid-item img {
+        width: 200px;
+        height: px;
+        align-items: center;
+        justify-content: center; }
+      .grid-container .grid-item h3 {
+        position: relative;
+        text-align: center;
+        font-size: 10px; } }
+
 @media screen and (max-width: 414px) {
   main .hero h2 {
     font-size: 30px; }
@@ -190,11 +218,13 @@ footer div a img {
     padding: 20px; }
     main .grid-container .grid-item {
       border: 2px solid white;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       main .grid-container .grid-item img {
         width: 150px;
         height: 180px;
-        align-items: center; }
+        align-items: center;
+        justify-content: center; }
       main .grid-container .grid-item h3 {
         position: relative;
         text-align: center;
@@ -228,11 +258,9 @@ footer div a img {
 .foto3 img:hover {
   transform: scale(1.2); }
 
-.grid-contenedor .grid-items img:hover {
+.grid-contenedor .grid-items img {
   animation-name: imagen;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  animation-direction: initial;
+  animation-duration: 2s;
   animation-iteration-count: initial; }
 
 @keyframes imagen {
