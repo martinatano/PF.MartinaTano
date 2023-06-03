@@ -1,2 +1,14 @@
 $color-primario: black;
 $color-secundario: white;
+
+@mixin flex ($font, $justify, $align) {
+    font-size: $font;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$bgimg: (
+    bg-repeat: no-repeat,
+    bg-size: cover,
+    bg-position: center,
+)

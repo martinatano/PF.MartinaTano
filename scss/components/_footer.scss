@@ -1,10 +1,38 @@
 footer {
-    div {
-        a {
-            img {
-                width: 60px;
-                padding: 10px;
+    display: flex;
+
+    .pie {
+        padding: 30px;
+        div {
+            a {
+                img {
+                    width: 60px;
+                    padding: 10px;
+                }
             }
+        }
+    }
+
+    .categorias {
+        padding: 20px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            a { font-size: 15px;
+            color: black;}
+        }
+    }
+    .logo{
+        img{
+        width:120px;
+        height: 120px;
         }
     }
 }

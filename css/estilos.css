@@ -4,7 +4,7 @@
 
 header {
   background-color: black;
-  color: wheat; }
+  color: white; }
   header img {
     width: 200px; }
   header nav {
@@ -137,9 +137,45 @@ main .grid-container {
       position: relative;
       text-align: center; }
 
-footer div a img {
-  width: 60px;
-  padding: 10px; }
+footer {
+  display: flex; }
+  footer .pie {
+    padding: 30px; }
+    footer .pie div a img {
+      width: 60px;
+      padding: 10px; }
+  footer .categorias {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; }
+    footer .categorias div {
+      display: flex;
+      flex-direction: column; }
+      footer .categorias div a {
+        font-size: 15px;
+        color: black; }
+  footer .logo img {
+    width: 120px;
+    height: 120px; }
+
+@media screen and (max-width: 1395px) {
+  footer .pie {
+    padding: 5px; }
+    footer .pie div {
+      display: flex; }
+      footer .pie div a img {
+        width: 40px;
+        height: 40px; }
+  footer .categorias div p {
+    font-size: 10px; }
+  footer .categorias div a {
+    font-size: 10px; }
+  footer .logo img {
+    width: 80px;
+    height: 80px; } }
 
 @media screen and (max-width: 768px) {
   main .grid-contenedor {

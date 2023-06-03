@@ -1,14 +1,53 @@
+@media screen and (max-width: 1395px) {
+    footer {
+        .pie {
+            padding: 5px;
+
+            div {
+                display: flex;
+
+                a {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        .categorias {
+            div {
+                p {
+                    font-size: 10px;
+                }
+
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .logo {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:768px) {
     main {
         .grid-contenedor {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
 
             .grid-items {
                 padding: 3px;
                 text-align: center;
             }
         }
+
         .grid-container {
             grid-template-columns: 300px 300px;
             grid-template-rows: 250px 250px;
@@ -54,6 +93,7 @@
                 font-size: 15px;
             }
         }
+
         .grid-container {
             grid-template-columns: 300px;
             grid-template-rows: 250px;
@@ -142,12 +182,10 @@
         }
 
 
-       
+
 
         .envios {
-            font-size: 8px;
-            justify-content: center;
-            align-items: center;
+            @include flex(8px, center, center);
 
             p {
                 font-size: 15px;
